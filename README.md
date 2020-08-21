@@ -1,10 +1,13 @@
 # Starlette-resource
 
-Starlette resource that helps you follow a layered architecture.
+[Starlette](https://www.starlette.io/) resource that helps you follow a layered architecture.
 
-This module was made to facilitate the implementation of a layered architecture. The `Resource` and` WebSocketResource` classes are essentially the same things as Starlette's `HTTPEndpoint` and` WebSocketEndpoint` classes. So you can use these classes in the same way.
+This module was made to facilitate the implementation of a layered architecture.
+The `Resource` and` WebSocketResource` classes are essentially the same things as Starlette's
+[`HTTPEndpoint`](https://www.starlette.io/endpoints/#httpendpoint) and [`WebSocketEndpoint`](https://www.starlette.io/endpoints/#websocketendpoint)
+classes. So you can use these classes in the same way.
 
-The difference is that the `Resource` and `WebSockerResource` must be instantiated before being passed to Starlette's `Route`.
+The difference is that the `Resource` and `WebSockerResource` must be instantiated before being passed to Starlette's [`Route`](https://www.starlette.io/routing/).
 
 ### Example
 ```python
