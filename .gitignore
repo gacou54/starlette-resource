@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+!README.md
+!setup.py
+!requirements.txt
+
+!starlette_resource/
+!starlette_resource/**
+
+!tests/
+!tests/**
+
+__pycache__/
+*.pyc
