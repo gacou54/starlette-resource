@@ -15,7 +15,7 @@ class GreetingService:
 
 class GreetingResource(Resource):
 
-    def __init__(self, hello_service: GreetingService):
+    def __init__(self, hello_service: GreetingService) -> None:
         self.hello_service = hello_service
 
     async def get(self, req: Request) -> PlainTextResponse:
@@ -28,7 +28,7 @@ class GreetingResource(Resource):
 
 class GreetingWebSocketResource(WebSocketResource):
 
-    def __init__(self, hello_service: GreetingService):
+    def __init__(self, hello_service: GreetingService) -> None:
         self.hello_service = hello_service
 
     async def on_receive(self, websocket: WebSocket, data: str) -> None:
