@@ -1,6 +1,7 @@
 *
 
 !.gitignore
+!.travis.yml
 !README.md
 !setup.py
 !requirements.txt
