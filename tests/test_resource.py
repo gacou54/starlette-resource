@@ -11,13 +11,3 @@ def test_resource() -> None:
     response = client.get('/greet/John')
 
     assert response.text == expected_message
-
-
-def test_websocket_resource() -> None:
-    expected_message = 'Hello John!'
-
-    with client.websocket_connect('/websocket_greet') as websocket:
-        websocket.send_text('John')
-        result = websocket.receive_text()
-
-        assert result == expected_message
