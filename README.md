@@ -1,7 +1,5 @@
 # Starlette-resource
-[![build status](
-  http://img.shields.io/travis/username/repo/master.svg?style=flat)](
- https://travis-ci.com/github/gacou54/starlette-resource)
+[![Build Status](https://travis-ci.com/gacou54/starlette-resource.svg?branch=master)](https://travis-ci.com/gacou54/starlette-resource)
 
 [Starlette](https://www.starlette.io/) resource that helps you follow a layered architecture.
 
