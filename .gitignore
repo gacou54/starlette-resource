@@ -3,8 +3,7 @@
 !.gitignore
 !.travis.yml
 !README.md
-!setup.py
-!requirements.txt
+!pyproject.toml
 
 !starlette_resource/
 !starlette_resource/**

@@ -1,13 +1,11 @@
-from starlette.testclient import TestClient
-
-from tests.sample_app import app
-
-client = TestClient(app)
+import pytest
 
 
-def test_resource() -> None:
-    expected_message = 'Hello John!'
+@pytest.mark.parametrize('name, expected', [
+    ('Gabriel', 'Hello Gabriel!'),
+    ('John', 'Hello John!'),
+])
+def test_resource(client, name, expected) -> None:
+    response = client.get(f'/greet/{name}')
 
-    response = client.get('/greet/John')
-
-    assert response.text == expected_message
+    assert response.text == expected
