@@ -1,7 +1,7 @@
 # Starlette-resource
 [![Build Status](https://travis-ci.com/gacou54/starlette-resource.svg?branch=master)](https://travis-ci.com/gacou54/starlette-resource)
 
-[Starlette](https://www.starlette.io/) resource that helps you follow a layered architecture.
+[Starlette](https://www.starlette.io/) resource classes that helps you follow a layered architecture.
 
 This module was made to facilitate the implementation of a layered architecture.
 The `Resource` and` WebSocketResource` classes are essentially the same things as Starlette's
@@ -10,7 +10,7 @@ classes. So you can use these classes in the same way.
 
 The difference is that the `Resource` and `WebSockerResource` must be instantiated before being passed to Starlette's [`Route`](https://www.starlette.io/routing/).
 
-Works with Python 3.6+.
+Works with Python 3.8+.
 
 ### Example
 ```python
