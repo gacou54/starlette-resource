@@ -1,5 +1,5 @@
 # Starlette-resource
-[![Build Status](https://travis-ci.com/gacou54/starlette-resource.svg?branch=master)](https://travis-ci.com/gacou54/starlette-resource)
+[![ci](https://github.com/gacou54/starlette-resource/workflows/Test/badge.svg)](https://github.com/gacou54/starlette-resource/actions?query=workflow%3ATest)
 
 [Starlette](https://www.starlette.io/) resource classes that helps you follow a layered architecture.
 
