@@ -1,9 +1,11 @@
 *
 
 !.gitignore
-!.travis.yml
 !README.md
 !pyproject.toml
+
+!.github/
+!.github/**
 
 !starlette_resource/
 !starlette_resource/**
